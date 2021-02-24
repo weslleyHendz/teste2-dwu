@@ -1,0 +1,39 @@
+import { AuthService } from './auth.service';
+import { Injectable } from '@angular/core';
+import { CanActivate, Router } from '@angular/router';
+
+@Injectable()
+export class AuthGuard implements CanActivate {
+
+    base_url: string;
+
+    constructor(
+        private authService: AuthService,
+        private router: Router) { }
+
+    canActivate() {
+        // Verifica se existe Token
+        if (this.authService.isAuthenticated()) {
+            // Caso exista token retorna true
+            return true;
+        } else {
+            // Caso não exista envia para página de login
+            this.router.navigate(['/login']);
+            return false;
+        }
+    // canActivate(
+    //     route: ActivatedRouteSnapshot,
+    //     state: RouterStateSnapshot): boolean | Observable<Boolean> | Promise<boolean> {
+    //        if(!this.userService.isLogged()){
+    //         this.router.navigate([''])
+    //         console.log('Vai fazer login!') 
+    //        }
+    //         return true;
+    //     }
+
+
+    }
+
+}
+
+    

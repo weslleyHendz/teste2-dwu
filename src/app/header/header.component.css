@@ -1,0 +1,102 @@
+.wrapper-header  {
+    height: 30vh;
+    padding: 10px;
+    background-image: linear-gradient(to bottom, #bbb4b4, #746e6e);
+    color: #fff;
+    box-shadow: 0 2px 5px -2px rgb(100, 100, 100);
+    }
+.menu-header li  {
+    display: inline;
+    font-size: 16px;
+    margin-left: -24px;
+    padding: 0px;
+    position: relative;
+
+    }
+    
+.acessar-conta {
+    position: absolute;
+    top: 10px;
+    background-color: #fff;
+    border: 0;
+    color: #333;
+    }
+    @media screen and (min-width: 600px) {
+.wrapper-header {
+    height: 15vh;
+    }
+    }
+
+.btn-home-cadastro-clientes {
+    position: relative !important;
+    /* top: 390px; */
+    padding: 20px;
+    font-size: 16px;
+    width: 40%;
+    background-image: linear-gradient(to bottom, #746e6e, #bbb4b4 );
+    color: #fff;
+    border: 2px solid;
+    }
+
+.btn-home-cadastro-clientes:hover {
+
+    background-image: linear-gradient(to bottom, #bbb4b4, #746e6e);
+
+}
+.button-home {
+    background-image: linear-gradient(to bottom, #746e6e, #bbb4b4);
+    border-radius: 5px;
+    padding: 10px;
+}
+.button-home:hover {
+    background-image: linear-gradient(to bottom, #bbb4b4, #746e6e);
+    border-radius: 5px;
+    padding: 10px;
+
+}
+
+.drop-teste {
+    background-color: black;
+}
+.selectcity .caret {
+    position: relative;
+    margin: 50px;
+    height: 100px;
+    width: 100px;
+    transform: rotate(45deg);
+}
+.selectcity .caret {
+    border-top:2px solid #36b0d9;
+    border-right: 0px solid transparent;
+    border-left: 2px solid #36b0d9;
+    position: relative;
+    margin: 0;
+    height: 8px;
+    width: 8px;
+    transform: rotate(45deg);
+    transition: all 0.6s;
+    margin-top:-5px;
+    margin-left:4px;
+}
+.selectcity .caret:before {
+    content:"";
+    height: 8px;
+    width: 8px;
+    top: 2px;
+    left: 2px;
+    position: absolute;
+    transition: all 0.6s;
+    border-top:2px solid #36b0d9;
+    border-right: 0px solid transparent;
+    border-left: 2px solid #36b0d9;
+    transform: rotate(180deg);
+}
+.selectcity:hover .caret, .selectcity:hover .caret:before {
+    border-color:#1e5c75;
+
+}
+/* .container {
+    width: 500px;
+    margin: 20px;
+    padding: 20px;
+  } */

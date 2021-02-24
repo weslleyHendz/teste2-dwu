@@ -1,0 +1,26 @@
+<form [formGroup]="formLogin" (ngSubmit)='objetoLogin()'>
+    <div class="form-row align-items-center">
+        <div class="login">
+            <div class="">
+                <label class="">
+                <b>Login</b>
+                </label>
+                <input
+                type="text"
+                class="form-control"
+                formControlName="email"
+                placeholder="Digite seu e-mail">
+
+                <input
+                type="password"
+                class="form-control"
+                formControlName="password"
+                placeholder="Digite sua senha">
+            </div>
+        </div>
+        <div class="col-auto my-1">
+        <button type="submit" class="btn btn-primary acessar-conta" (click)="objetoLogin()" >Acessar</button>
+        </div>
+    </div>
+ </form>
+ <br><p class='texto-login'>Faça login com seu usuário e senha<br> para acessar a página de cadastro.</p>
