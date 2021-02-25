@@ -26,7 +26,10 @@ export class CadastroClientesComponent implements OnInit {
       alfanumerico: [''],
       numero: [''],
       texto: [''],
-      radio:['']
+      radio:[''],
+      checkbox0: [''],
+      checkbox1: [''],
+      checkbox2: ['']
     });
     console.log(this.valoresForm);
     this.formCadastro.valueChanges.pipe(
@@ -61,7 +64,8 @@ export class CadastroClientesComponent implements OnInit {
         alfanumerico: [''],
         numero: [''],
         texto: [''],
-        radio:['']
+        radio:[''],
+        checkbox: ['']
       });
     }
 }  
