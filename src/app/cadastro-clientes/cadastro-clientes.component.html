@@ -9,46 +9,39 @@
             </div>  
         </div> 
         
-        <div class="col-12">
-            <h3 class="text-center texto-cadastro">Cadastro de clientes</h3>
-                <form class="mt-5"  [formGroup]='formCadastro' (ngSubmit)='objetoCadastro()' (ngSubmit)="resetForm()">
-            <div class="form-group">
-            <input type="date" class="form-control cadastro" id="exampleInputdate1" aria-describedby="dateHelp" placeholder="Data" formControlName='data'>
-            </div>
-            <div class="form-group">
-                <input type="time" class="form-control cadastro" id="exampleInputPassword1" placeholder="Horário" formControlName='horario'>
-            </div>
-            <div class="form-group">
-                <input type="verbatim" class="form-control cadastro" id="exampleInputPassword1" placeholder="Texto Alfanumérico"  formControlName='alfanumerico'>
-            </div>
-            <div class="form-group">
-                <input type="number" class="form-control cadastro" id="exampleInputPassword1" placeholder="Digite somente números"  formControlName='numero'>
-            </div>
-            <div class="form-group">
-                <textarea type="number" class="form-control cadastro" id="exampleInputPassword1" placeholder="Área de Texto Livre"  formControlName='texto'></textarea>
-            </div>
-            
-    <button type="submit" class="btn btn-cadastro btn-lg" (click)="objetoCadastro()" (click)="resetForm()">Cadastrar</button>
-    </form>
-        </div>
-        <div class="container radio-style col-sm-3">
-            <form action="/action_page.php">
-              <div class="form-check">
-                <label class="form-check-label" for="radio1">
-                  <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>Radio0
-                </label>
+    <div class="col-12">
+        <h3 class="text-center texto-cadastro">Cadastro de clientes</h3>
+            <form class="mt-5"  [formGroup]='formCadastro' (ngSubmit)='objetoCadastro()' (ngSubmit)="resetForm()">
+              <div class="form-group">
+                <input type="date" class="form-control cadastro" id="exampleInputdate1" aria-describedby="dateHelp" placeholder="Data" formControlName='data'>
               </div>
-              <div class="form-check">
-                <label class="form-check-label" for="radio2">
-                  <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">Radio1
-                </label>
+              <div class="form-group">
+                  <input type="time" class="form-control cadastro" id="exampleInputPassword1" placeholder="Horário" formControlName='horario'>
               </div>
-              <div class="form-check">
-                <label class="form-check-label" for="radio2">
-                    <input type="radio" class="form-check-input" id="radio3" name="optradio" value="option3">Radio2
-                  </label>
+              <div class="form-group">
+                  <input type="verbatim" class="form-control cadastro" id="exampleInputPassword1" placeholder="Texto Alfanumérico"  formControlName='alfanumerico'>
               </div>
-            </form>
-        </div>
+              <div class="form-group">
+                  <input type="number" class="form-control cadastro" id="exampleInputPassword1" placeholder="Digite somente números"  formControlName='numero'>
+              </div>
+              <div class="form-group">
+                  <textarea type="number" class="form-control cadastro" id="exampleInputPassword1" placeholder="Área de Texto Livre"  formControlName='texto'></textarea>
+              </div>
+              <div class="container radio-style col-sm-3">
+                  <div class="form-check">
+                    <label class="form-check-label" for="radio">
+                      <input type="radio" [value]="true" formControlName='radio' class="form-check-input" name="radio" checked><span>Radio Verdadeiro</span>
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <label class="form-check-label" for="radio">
+                      <input type="radio" [value]="false" formControlName='radio' class="form-check-input" name="radio"><span>Radio Falso</span>
+                    </label>
+                  </div>
+                </div>
+                  <button type="submit" class="btn btn-cadastro btn-lg" (click)="objetoCadastro()" (click)="resetForm()">Cadastrar</button>
+      </form>
+    </div>
+
     </div>
 </div>

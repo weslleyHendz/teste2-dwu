@@ -42,4 +42,10 @@
     background-image: linear-gradient(to bottom, #bbb4b4, #746e6e);
     margin-top: 20px;
     margin-bottom: 20px;
+    border-radius: 5px;
 }
+
+.mat-radio-button ~ .mat-radio-button {
+    margin-left: 16px;
+  }
+  

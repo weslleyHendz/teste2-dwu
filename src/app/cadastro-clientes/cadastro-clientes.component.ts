@@ -25,7 +25,8 @@ export class CadastroClientesComponent implements OnInit {
       horario: [''],
       alfanumerico: [''],
       numero: [''],
-      texto: ['']
+      texto: [''],
+      radio:['']
     });
     console.log(this.valoresForm);
     this.formCadastro.valueChanges.pipe(
@@ -59,7 +60,8 @@ export class CadastroClientesComponent implements OnInit {
         horario: [''],
         alfanumerico: [''],
         numero: [''],
-        texto: ['']
+        texto: [''],
+        radio:['']
       });
     }
 }  
