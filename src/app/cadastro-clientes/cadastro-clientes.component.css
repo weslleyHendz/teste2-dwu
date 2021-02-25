@@ -52,3 +52,17 @@
 .radio-style {
     background-color: black;
   }
+
+.btn-dwu {
+    background-image: linear-gradient(to bottom, #746e6e, #bbb4b4);
+    color: #fff;
+}
+
+.btn-dwu:hover {
+    background-image: linear-gradient(to bottom, #bbb4b4,#746e6e);
+    color: #fff;
+}
+
+.btn-dwu2 {
+    color: #746e6e;
+}
