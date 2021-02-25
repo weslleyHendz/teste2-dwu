@@ -13,6 +13,8 @@ import { AuthGuard } from '../auth.guard';
 import { AuthService } from '../auth.service';
 import { LoginComponent } from './login/login.component';
 import { AcessoNegadoComponent } from './acesso-negado/acesso-negado.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
 
 @NgModule({
   declarations: [
@@ -29,10 +31,12 @@ import { AcessoNegadoComponent } from './acesso-negado/acesso-negado.component';
     BrowserAnimationsModule,
     MatDialogModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    NgbModule
   ],
   providers: [AuthGuard, AuthService],
   bootstrap: [AppComponent],
-  schemas: [CUSTOM_ELEMENTS_SCHEMA]
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
+  exports: [CadastroClientesComponent]
 })
 export class AppModule { }

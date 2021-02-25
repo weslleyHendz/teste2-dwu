@@ -1,17 +1,16 @@
 <div class="container bg_img">
     <div class="row box-cadastro">
+        <div ngbDropdown class="d-inline-block">
+            <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>Dropdown</button>
+            <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                <button ngbDropdownItem>Dropdown0</button>
+                <button ngbDropdownItem>Dropdown1</button>
+                <button ngbDropdownItem>Dropdown2</button>
+            </div>  
+        </div> 
+        
         <div class="col-12">
             <h3 class="text-center texto-cadastro">Cadastro de clientes</h3>
-            <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Dropdown button
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </div>
-            </div>
                 <form class="mt-5"  [formGroup]='formCadastro' (ngSubmit)='objetoCadastro()' (ngSubmit)="resetForm()">
             <div class="form-group">
             <input type="date" class="form-control cadastro" id="exampleInputdate1" aria-describedby="dateHelp" placeholder="Data" formControlName='data'>
@@ -52,15 +51,4 @@
             </form>
         </div>
     </div>
-    <div class="dropdown">
-        <a class="btn btn-secondary dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown
-        </a>
-      
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-          <a class="dropdown-item" href="#">Dropdown0</a>
-          <a class="dropdown-item" href="#">Dropdown1</a>
-          <a class="dropdown-item" href="#">Dropdown2</a>
-        </div>
-    </div>  
 </div>
