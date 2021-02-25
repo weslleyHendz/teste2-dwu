@@ -65,7 +65,9 @@ export class CadastroClientesComponent implements OnInit {
         numero: [''],
         texto: [''],
         radio:[''],
-        checkbox: ['']
+        checkbox0: [''],
+        checkbox1: [''],
+        checkbox2: ['']
       });
     }
 }  
